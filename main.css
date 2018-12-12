@@ -1,0 +1,117 @@
+body
+{
+    background-color: #2f3336;
+    color: #efefef
+    margin:0;
+    font-size: 17px;
+}
+
+h1.logo
+{
+    font-size:44px;
+    font-weight: 700a;
+    color:#ddd;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    line-heigh: 100px;
+}
+
+#logotyp
+{
+    background-image: url("img/cartographer.png");
+    height: 140px;    
+}
+
+nav
+{
+    background-color: #1c74b2;
+    text-align: center;  
+}
+
+.menu
+{
+    list-style-type: none;
+    margin:0px;
+    padding: 10px;
+    font-size: 18px;
+    min-height: 30px;
+    line-height: 200%;
+}
+
+.menu > li 
+{
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 1px dashed #0a2b42;  
+}
+
+.menu > li:first-child
+{
+    border-left: none;
+}
+
+.menu a
+{
+    color:#fff;
+    text-decoration:none;
+}
+
+.menu a:hover
+{
+    color:#0a2b42;
+}
+
+.subject
+{
+    display: inline-block;
+    width: 400px;
+}
+
+img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.subject a
+{
+    opacity: 0.9;
+}
+
+.subject a:hover
+{
+    opacity: 1;
+}
+
+figure
+{
+    margin: 8px;
+    padding: 8px;
+    
+}
+
+container 
+{
+    margin: 
+}
+
+#mymap
+{
+    height: 70vh;
+    width: auto;
+    
+}
+
+
+
+
+
+
+
+
+
+
