@@ -104,6 +104,13 @@ figure
 	width:auto;
 }
 
-
+.text {
+    text-align: justify;
+    text-indent: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+    
+}
 
 
