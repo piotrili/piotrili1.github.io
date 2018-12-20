@@ -32,8 +32,40 @@
         <div class="container">
         <div class="tekst">
             <header>
-            
-            </header>           
+            <h1>Prezentacja wyników analiz </h1>
+            </header>   
+            <p class="text", color="darkred"><b>W wyniku pracy wyżej opisanych modeli otrzymano siedem rastrów, które przedstawiają strefy buforowe wyżej wymienionych warstw shp. Wszystkie mapy poglądowe zostały wykonane w skali 1 : 300 000.</b></p></br>
+            <div class="symbol">
+            <img src="../img/kolej.jpg">
+             <p class="text">Strefy buforowe dla warstwy kolei przedstawiają odległości od głównej magistrali kolejowej biegnącej po terenie gminy Łobez. Jest to jedyna linia kolejowa znajdująca się na terenie gminy. Zlokalizowana jest w centrum gminy, przebiega przez główne miasto, czyli Łobez, oraz łączy miasto Łobez z pozostałymi większymi miastami w regionie. Trasa służy głównie do transportu pasażerskiego, a sporadycznie używana jest do przewożenia różnego rodzaju materiałów, dlatego też nie jest rozbudowywana.</p>
+                <div class="symbol">
+            <img src="../img/drogi.jpg">
+            <p class="text">Zaprezentowana powyżej grafika, ilustruję strefy buforowe dla sieci drogowej na terenie gminy Łobez. Można zauważyć iż sieć ta jest gęsta i rozbudowana. Główne skoncetrowanie przypada na miasto Łobez jako miasto z siedzibą rady miasta i gminy Łobez. Bufory otrzymane nie nachodzą na siebie z uwagi na małą odległość przyjętą w kryteriach. Analizę wykonano na drogach drugorzędnych czyli ulicówkach i przelotówkach. </p>
+                    <div class="symbol">
+            <img src="../img/mieszkania.jpg">
+             <p class="text">Wykonane strefy buforowe dla warstwy osiedli mieszkaniowych przedstawiają odległości przyjęte w kryteriach. Z uwagi że w gminie znajduje się jedno miasto dlatego liczba osiedli mieszkaniowych, a co za tym idzie stref buforowych jest niewielka. Bufory wytworzone na rastrze widocznie są rozrzucone po całym terenie i nie ingerują w siebie wzajemnie. Również zauważyć można iż osiedla znajdujące się na terenie gminy zajmują niewielką powierzchnie w terenie, gdyż wytworzone bufory są małe, a największy z nich znajduje się właśnie w mieście Łobez. </p>
+                        <div class="symbol">
+            <img src="../img/wodypow.jpg">
+            <p class="text">Powyższy rysunek przedstawia strefy buforowe wykonane dla wód powierzchniowych znajdujących się w granicach terenu gminy Łobez. Ilość buforów uwarunkowana jest ilością jezior. Z racji położenia geograficznego gminy Łobez czyli pojezierze, oznacza dużą ilość jezior, stawów oraz innych wód powierzchniowych znajdujących się na tych terenach. Rozmieszczenie stref jest nierównomierne, lecz liniowe. Główna linia jezior biegnie po południowo-zachodniej granicy gminy. Natomiast kilka jezior rozmieszczony jest w centrum, na północy oraz wchodzie gminy.</p>
+                            <div class="symbol">
+            <img src="../img/wodylin.jpg">
+            <p class="text">Zaprezentowane powyżej powstałe strefy buforowe dla warstwy wód liniowych przedstawiają bieg najważniejszych rzek w gminie Łobez. Główną rzeką tej że gminy jest rzeka Rega, która przebiega przez środek gminy. Pozostałe rzeki biegną wzdłuż granic gminy i oddzielają gminę Łobez od sąsiadujących. Główna rzeka przebiega przez jedyne miasto w gminie co może mieć wpływ na późniejsze analizy.</p>
+                                <div class="symbol">
+            <img src="../img/cmentarze.jpg">
+             <p class="text">Dla warstwy cmentarze został wygenerowany powyższy raster. Obiekty są rozmieszczone w północnej części gminy oraz centralnej. Jeden obiekt znajduje się na południu. Główny cmentarz znajduje się w największej miejscowości w gminie, czyli w mieście Łobez. Jak można zauważyć strefy buforowe dla warstwy cmentarze prawdopodobnie nie będą miały  większego wpływu na dalsze analizy. Obiekty są rozłożone po całym terenie gminy, co więcej jest ich niewiele.</p>
+                                    <div class="symbol">
+            <img src="../img/szkoly.jpg">
+            <p class="text">Powstałe strefy buforowe dla szkół w gminie Łobez zaprezentowano powyżej. Na załączonej grafice Rys. 10 widoczny jest tylko jeden obiekt punktowy. Jest to oczywiście błąd danych. Gdyż na terenie gminy Łobez występuję co najmniej kilkanaście placówek oświatowych oraz szkoła oznaczona na Rys 10 nie leży w mieście Łobez, co już wskazuje na błąd. Z uwagi na niekompletność danych mają one znikomy wpływ na przeprowadzone analizy. 
+
+Dwa rastry nie zostały wygenerowane z uwagi na brak danych zawartych w bazach danych użytych do wykonania analizy.
+</p>
+            <p class="text"><b>1. Analiza wielokryterialna</b></p>
+            <p class="text">W celu wykonania analizy wielokryterialnej posłużono się narzędziem Weighted overlay, które analizując wartości piksela i ich wagi generuję mapę prezentującą lokalizacje najbardziej korzystne, które spełniają wszelkie założone kryteria. W tym konkretnym przypadku do analizy wykorzystano wcześniej utworzone strefy buforowe w postaci rastrów. W parametrach tej że analizy uwzględniono wagę przyjętych odległości jako czynnik warunkujący korzystność inwestycji do wykonania w danym miejscu. Analizując powyższy rysunek można spostrzec, że większość terenu nie nadaję się do wykonania inwestycji. Wszelkie warunki spełniły tereny oznaczone kolorem zielonym na powyższej mapie. Jest ich niewiele, więc wybór odpowiedniego terenu będzie prostszy. Ponadto tereny najdogodniejsze nie są skoncentrowane w jednym miejscu w gminie więc kolejnym czynnikiem, nie ujętym w tej analizie może być odległość miasta Łobez od wybranej lokalizacji dla inwestycji.
+            </p>
+                                        <div class="symbol">
+            <img src="../img/wei.JPG">
+             <p class="text"><b>2. Wnioski</b></p> 
+            <p class="text">Przeprowadzone analizy wykazały, iż optymalnych terenów do wykorzystania w celu zrealizowania inwestycji jest niewiele. Wykonane bufory dla warstw zdefiniowanych wcześniej nie mogą jednoznacznie określić które tereny są przydatne, dopiero użycie funkcji Weighted overlay, która waguję wielkości buforów, wskazała rozwiązanie. Obszary korzystne wygenerowane w ten sposób są niewielkie w porównaniu do terenów niesprzyjających. Wszystko zależne jest od przyjętych kryteriów oraz od warstw poddanych analizie. Wszelkie korzystne tereny położone są na obrzeżach gminy Łobez, aczkolwiek jedno skupisko znajduję się prawdopodobnie w granicach miasta Łobez. W celu zmiany wielkości terenów korzystnych można zmienić kryteria odległości bądź wagowania danych terenów. Ważność danej warstwy przy analizie wpływa na to czy zostaje ona wzięta pod uwagę czy nie, więc jeżeli na małym obszarze jest nagromadzenie terenów które zostały sklasyfikowane jako nieprzydatne wtedy analiza będzie precyzyjna i wskazywała bardzo dokładnie tereny nadające się na przeprowadzenie analizy, tak jak to miało w tym przypadku. Lokalizacja danej inwestycji może wiązać się z przyjętym warunkiem z góry, iż to teren miejski jest najbardziej pożądany do wykonania analizy. W tym przypadku wykazano również niekompletność danych, które znacznie wpływają na analizy wielokryterialne. Dogodność do wykonania zadanej inwestycji jest określane wynikami z analiz wielokryterialnych, więc niekompletność danych czy źle przyjęte kryteria znacznie wpływają na decyzję o umiejscowieniu danej inwestycji. </p>
             </div>
         </div>
         </body>

@@ -150,3 +150,10 @@ h1.logo2
     margin-right: 2rem;
     color: aquamarine;    
 }
+.modele img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 700px;
+    height: 400px;
+}

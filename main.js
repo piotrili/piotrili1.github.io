@@ -1,7 +1,7 @@
 $(document).ready(function(){
    var mymap = L.map('mymap',
                     {
-                     center: [52.1, 21.0], 
+                     center: [53.38, 15.37], 
                      zoom: 5,
                      zoomControl:true,
                      attributionControl:true

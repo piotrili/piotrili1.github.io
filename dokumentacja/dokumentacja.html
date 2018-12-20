@@ -14,10 +14,9 @@
             <header>
                <div id="logotyp">
                     <h1 class="logo">
-                    <style="color:#2a5daf">ANALiza
-                    <style="color:#009966">Terenu 
+                    ANALIZA TERENU
                         </br>
-                    <style="color:#2a5daf">projekt
+                        PROJEKT
                     </h1>
                </div>
             </header>
@@ -38,13 +37,13 @@
                             <p>20.12.2018 | 01:45 | Piotr Iliczyn </p>
                         
                         </header>
-                        <p>Praca nad laboratorium wiązała się z wykorzystaniem model buildera, przy pomocy którego należało wykonać wielokryterialne analizy terenu. Do wykonania tego zadania wykonano trzy modele. Miały one na celu wyselekcjonować dane, wykonać bufor i wyłonić teren spełniające wszelkie kryteria zadane przez tworzącego.
+                        <p>Praca nad laboratorium wiązała się z wykorzystaniem model buildera, przy pomocy którego należało wykonać wielokryterialne analizy terenu. Do wykonania tego zadania wykonano trzy modele. Miały one na celu wyselekcjonować dane, wykonać bufor i wyłonić teren spełniające wszelkie kryteria zadane przez tworzącego.</p>
                         </br>
-                        1. Wykonane modele
+                        <b> 1. Wykonane modele </b>
                         <p>Model pierwszy miał na celu wyselekcjonować i przyciąć dane do zadanego terenu. Dlatego, do zbudowania tego modelu posłużyły funkcję Select, Clip oraz Iterate Feature Classes. Funkcja Select służy do zaznaczania obiektów o konkretnym atrybucie, w tym przypadku chodziło o gminę Łobez, do czego posłużył atrybut jpt_nazwa. Funkcja Clip przycina wyselekcjonowany wcześniej obszar i tworzy nową osobną warstwę. Natomiast Iterate Feature Classes powtarza proces poprzez iterację, czyli właśnie powtarzanie.</p>
                         </br>
                 
-                        <div class="obrazek">
+                        <div class="modele">
                              
                              <img src="../img/ciecie.jpg">
                         </div>
@@ -52,13 +51,13 @@
                         </br>
                     
                         <p>Model drugi służył do wygenerowania stref buforowych i pozyskania wiadomości o najdogodniejszym terenie do wykonania inwestycji. Do wykonania tego modelu, roboczo nazwanego model_kryteria, posłużyły mi funkcję Select, Multiple Ring Buffer, Identity, Feature to Raster, Weighted overlay, Clip, Con, Majority Filter. Pierwsza z funkcji służy do generowania stref buforowych o zadanych odległościach. Funkcja tworzy nowy atrybut w tabeli atrybutów danego obiektu, gdzie wpisane są wartości buforów. Funkcja Identity służy do łączenia nachodzących na siebie obszarów, warstwa nowopowstała otrzymuje atrybuty warstwy identyfikowanej. Następna funkcja, czyli Feature to Raster tworzy z warstwy wektorowej raster. W tym modelu otrzymujemy dziewięć rastrów. Funkcja Weighetd overlay nakłada kilka rastrów, używając wspólnej skali pomiarowej i wagi, według ich ważności. Łączy rastry w jeden względem ważności jaka zostaje nadana w tym narzędziu. Narzędzie to służy do przycinania danych do zadanego terenu. W tym przypadku był to teren gminy Łobez. Narzędzie Con analizując cały wejściowy raster wybiera spośród wszystkich pikseli te które spełniają wyznaczone kryterium. W tym przypadku narzędzie to wskazuje nam tereny najdogodniejszej lokalizacji dla inwestycji. Ostatnie narzędzie użyte do stworzenia tego modelu służy do wygładzania widoku rastra. Na podstawie sąsiadujących pikseli raster zostaje przetworzony i jego obraz zostaje uproszczony. Przetworzenie następuję po wcześniejszym wyznaczeniu ilości pikseli sąsiadujących potrzebnych do przeprowadzenia tej analizy.</p> </br>
-                        <div class="obrazek">
+                        <div class="modele">
                              
                              <img src="../img/kryteria.jpg">
-                        </div> </br>
+    </div> </br></br>
                         <p>Model trzeci miał na celu wykonanie numerycznego modelu terenu z danych w formacie ASCII i zapisanych w pliku tekstowym. Model bazuje na następujących narzędziach ASCII 3D to Feature Class, IDW, Clip, Slope oraz Hillshade. Narzędzie pierwsze służy do przetwarzania danych w formacie ASCII na klasę obiektów. Za pomocą tego narzędzia utworzyła się funkcja warstwę punktową, która posiadała wartości wysokości dla każdego z punktów. Narzędzie IDW służące do tworzenia rastrów poprzez interpolację warstwy punktowej używając techniki odwrotnych odległości. Funkcja Clip została już opisana powyżej dlatego teraz zostanie pominięta. Kolejne narzędzia to Slope i Hillshade które służą do stworzenia rastra nachyleń terenu. Model roboczo został nazwany NMT. </p>
                         </br>
-                        <div class="obrazek">
+                        <div class="modele">
                              
                              <img src="../img/nmt.jpg">
                         </div> </br>
