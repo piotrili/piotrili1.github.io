@@ -6,7 +6,7 @@
             <meta charset="utf-8">
             <meta name="description" content="Strona interenetowa na potrzeby realizacji projektu">
             <meta name="keywords" content="ATE, geodezja">
-            <meta name="author" content="MW">
+            <meta name="author" content="PI">
             <title> Analiza terenu projekt</title>
             <link rel="stylesheet" href="../main.css">           
         </head>
@@ -14,44 +14,64 @@
             <header>
                <div id="logotyp">
                     <h1 class="logo">
-                    <span style="color:#2a5daf">ANAL</span>iza
-                    <span style="color:#2a5daf">Ter</span>enu 
-                    <span style="color:#2a5daf">pro</span>jekt
+                    <style="color:#2a5daf">ANALiza
+                    <style="color:#009966">Terenu 
+                        </br>
+                    <style="color:#2a5daf">projekt
                     </h1>
                </div>
             </header>
             <nav>
                 <ul class="menu">
-                    <li><a href="../index.html">Strona główna</a><li>
-                    <li><a href="#">O projekcie</a><li>
-                    <li><a href="#">Materiały</a><li>
-                    <li><a href="#">Kontakt</a><li>
+                     <li><a href="../index.html">Strona główna</a><li>
+                    <li><a href="../o_projekcie/projekt.html">O projekcie</a><li>
+                    <li><a href="../materialy/materialy.html">Materiały</a><li>
+                    <li><a href="../wynik/wynik.html">Wyniki</a><li>
+                    <li><a href="../kontakt/kontakt.html">Kontakt</a><li>
                 </ul>
             </nav>
             <div class="container">
                 <div class="text">
                     <article>
                         <header>
-                            <h1>Opis ogólny</h1>
-                            <p>17.12.2018 | 10:45 | Piotr Iliczyn </p>
+                            <h1>Opis wykonanego laboratorium</h1>
+                            <p>20.12.2018 | 01:45 | Piotr Iliczyn </p>
                         
                         </header>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet odio at felis suscipit iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque cursus convallis laoreet. Suspendisse potenti. Phasellus hendrerit tristique tristique. Sed ipsum nulla, pulvinar nec nunc ac, commodo vehicula sem. Aenean pretium feugiat nisi, cursus blandit risus consectetur eget. Mauris nec pharetra felis.
-                        </br></br>
+                        <p>Praca nad laboratorium wiązała się z wykorzystaniem model buildera, przy pomocy którego należało wykonać wielokryterialne analizy terenu. Do wykonania tego zadania wykonano trzy modele. Miały one na celu wyselekcjonować dane, wykonać bufor i wyłonić teren spełniające wszelkie kryteria zadane przez tworzącego.
+                        </br>
+                        1. Wykonane modele
+                        <p>Model pierwszy miał na celu wyselekcjonować i przyciąć dane do zadanego terenu. Dlatego, do zbudowania tego modelu posłużyły funkcję Select, Clip oraz Iterate Feature Classes. Funkcja Select służy do zaznaczania obiektów o konkretnym atrybucie, w tym przypadku chodziło o gminę Łobez, do czego posłużył atrybut jpt_nazwa. Funkcja Clip przycina wyselekcjonowany wcześniej obszar i tworzy nową osobną warstwę. Natomiast Iterate Feature Classes powtarza proces poprzez iterację, czyli właśnie powtarzanie.</p>
+                        </br>
                 
                         <div class="obrazek">
                              
-                             <img src="../img/analizaa.JPG">
+                             <img src="../img/ciecie.jpg">
                         </div>
                 
                         </br>
                     
-Ut vulputate massa lorem, eget egestas orci dictum nec. Quisque vel ante viverra, interdum nulla eu, gravida elit. Proin mauris nibh, sodales quis sem vitae, rhoncus mollis sapien. Etiam aliquet dolor id massa finibus, et sodales nulla tristique. Suspendisse posuere condimentum metus, vitae fringilla erat maximus sed. In luctus pulvinar finibus. Nullam id egestas nisi. Phasellus semper lorem a quam semper, sit amet dignissim massa blandit. Nullam a rhoncus arcu. In ac imperdiet nisi.
+                        <p>Model drugi służył do wygenerowania stref buforowych i pozyskania wiadomości o najdogodniejszym terenie do wykonania inwestycji. Do wykonania tego modelu, roboczo nazwanego model_kryteria, posłużyły mi funkcję Select, Multiple Ring Buffer, Identity, Feature to Raster, Weighted overlay, Clip, Con, Majority Filter. Pierwsza z funkcji służy do generowania stref buforowych o zadanych odległościach. Funkcja tworzy nowy atrybut w tabeli atrybutów danego obiektu, gdzie wpisane są wartości buforów. Funkcja Identity służy do łączenia nachodzących na siebie obszarów, warstwa nowopowstała otrzymuje atrybuty warstwy identyfikowanej. Następna funkcja, czyli Feature to Raster tworzy z warstwy wektorowej raster. W tym modelu otrzymujemy dziewięć rastrów. Funkcja Weighetd overlay nakłada kilka rastrów, używając wspólnej skali pomiarowej i wagi, według ich ważności. Łączy rastry w jeden względem ważności jaka zostaje nadana w tym narzędziu. Narzędzie to służy do przycinania danych do zadanego terenu. W tym przypadku był to teren gminy Łobez. Narzędzie Con analizując cały wejściowy raster wybiera spośród wszystkich pikseli te które spełniają wyznaczone kryterium. W tym przypadku narzędzie to wskazuje nam tereny najdogodniejszej lokalizacji dla inwestycji. Ostatnie narzędzie użyte do stworzenia tego modelu służy do wygładzania widoku rastra. Na podstawie sąsiadujących pikseli raster zostaje przetworzony i jego obraz zostaje uproszczony. Przetworzenie następuję po wcześniejszym wyznaczeniu ilości pikseli sąsiadujących potrzebnych do przeprowadzenia tej analizy.</p> </br>
+                        <div class="obrazek">
+                             
+                             <img src="../img/kryteria.jpg">
+                        </div> </br>
+                        <p>Model trzeci miał na celu wykonanie numerycznego modelu terenu z danych w formacie ASCII i zapisanych w pliku tekstowym. Model bazuje na następujących narzędziach ASCII 3D to Feature Class, IDW, Clip, Slope oraz Hillshade. Narzędzie pierwsze służy do przetwarzania danych w formacie ASCII na klasę obiektów. Za pomocą tego narzędzia utworzyła się funkcja warstwę punktową, która posiadała wartości wysokości dla każdego z punktów. Narzędzie IDW służące do tworzenia rastrów poprzez interpolację warstwy punktowej używając techniki odwrotnych odległości. Funkcja Clip została już opisana powyżej dlatego teraz zostanie pominięta. Kolejne narzędzia to Slope i Hillshade które służą do stworzenia rastra nachyleń terenu. Model roboczo został nazwany NMT. </p>
+                        </br>
+                        <div class="obrazek">
+                             
+                             <img src="../img/nmt.jpg">
+                        </div> </br>
+                        Do wykonania modelu „kryteria” zostały narzucone kryteria, które to w modelu musiały zostać uwzględnione. Kryteria te zapisuje się w narzędziu Multiple Ring Buffer. W tym narzędziu uwzględnia się wielkości stref buforowych jakie mają zostać utworzone względem obiektów wejściowych. Każda z dziewięciu wcześniej opisanych warstw została opatrzona w następujące kryteria: 
+                        <p>- warstwa cieki wodne posiada bufory o odległości 150, 200, 250, 300 [m];</p>
+                        <p>- warstwa wody powierzchniowe posiada bufory o odległości 100, 200, 300, 400 [m];</p>
+                        <p>- warstwa drogi posiada bufory o odległości 50, 100 [m];</p>
+                        <p>- warstwa kolej posiada bufory o odległości 200, 300, 400 [m];</p>
+                        <p>- warstwa więzienia posiada bufory o odległości 500, 1000, 1200 [m];</p>
+                        <p>- warstwa cmentarz posiada bufory o odległości 300, 400 [m];</p>
+                        <p>- warstwa tereny rekreacyjne posiada bufory o odległości 100, 200, 300, 400 [m];</p>
+                        <p>- warstwa osiedla mieszkaniowe posiada bufory o odległości   100, 200, 300, 400 [m];</p>
 
-Fusce vehicula pharetra eros, in fermentum nibh fringilla sit amet. Maecenas eu nunc libero. Quisque id justo vel elit eleifend porta sit amet vel magna. Pellentesque auctor risus congue velit lobortis, ac rhoncus erat aliquam. Nam eget molestie purus. Nullam vitae nunc tempus, posuere ligula quis, congue leo. Pellentesque lacinia volutpat tortor, nec cursus lacus efficitur quis. Aenean erat purus, gravida ac accumsan in, suscipit ac nulla. Suspendisse scelerisque sagittis turpis a egestas. Nullam maximus viverra dapibus. Nam consequat, sapien et eleifend rutrum, lorem dolor mattis nisl, tincidunt mattis sem sapien quis odio. Donec a ex lorem. Integer euismod ligula augue, sed fermentum turpis dictum interdum.
-                        
-                        
-                        
                         
                         </p>
                     

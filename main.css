@@ -10,10 +10,10 @@ h1.logo
 {
     font-size:44px;
     font-weight: 700;
-    color:#ddd;
+    color:#009966;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
     line-height: 6rem;
@@ -77,9 +77,8 @@ nav
 
 img
 {
-    max-width: 40vw;
-	height:40vh;
-	
+    max-width: 400vw;
+	height: 40vh;
 }
 
 .subject a
@@ -116,6 +115,38 @@ figure
     display: flex;
     justify-content: center;
     margin: auto;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 300px;
+}
+
+.container1{
+        text-align: left;
+}
+
+.logo1 {
+    	min-height: 225px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+}
+#logotyp1 {
+    background-image: url("img/shapefile.png");
+}
+h1.logo2
+{
+    font-size:50px;
+    font-weight: 700;
+    color: darkred;
+    text-align: left;
+    margin-left: 2rem;
+    letter-spacing: 3px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 6rem;
+}
+.tekst1{
+    text-align: justify;
+    text-indent: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: aquamarine;    
 }
